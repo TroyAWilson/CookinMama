@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: whitesmoke;
+  margin:0;
+  padding:0;
+
+}
+.mainHeader{
+  background-color:rgba(0,0,0)
+}
+
+main{
+  background-color: tomato;
+  margin: auto;
+  max-width: 90%;
+}
