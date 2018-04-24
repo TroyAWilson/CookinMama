@@ -1,19 +1,59 @@
+/*
+   #454ADE Majorelle blue
+   #1B1F3B Yankees blue // loving this one!
+   #B14AED Navy purple
+   #C874D9 French Mauve
+   #E1BBC9 Cameo pink
+   #FF0034 Cookin Mama logo color
+
+*/
+
+
+
+
 * {
   box-sizing: border-box;
 }
 
 body{
-  background-color: whitesmoke;
+  background-color: #E1BBC9;
   margin:0;
   padding:0;
 
 }
 .mainHeader{
-  background-color:rgba(0,0,0)
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#1B1F3B;
+  justify-content: center;
+}
+.mainHeader img{
+  width: 100%;
+}
+
+.mainHeader ul{
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+
+
+}
+.mainHeader li {
+  font-size: 1.5em;
+  background-color: #FF0034;
+  margin: 5px ;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px black;
+}
+a {
+  font-weight: bold;
+  color: #0B132B;  /* Maastricht blue */
+  text-decoration: none;
 }
 
 main{
-  background-color: tomato;
+  background-color: #FF0034;
   margin: auto;
   max-width: 90%;
 }
