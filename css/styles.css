@@ -31,7 +31,7 @@ main {
 a {
   color:#FF0034;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .mainHeader{
@@ -41,19 +41,27 @@ a {
 }
 .mainHeader h1 {
   color: #FF0034;
-  font-size:2.5em;
+  font-size:2em;
   margin: 5px;
   padding: 5px;
 }
+.mainHeader img {
+  max-width: 55px;
+  max-height: 55px;
+  margin: 10px 0;
+  align-self:center;
+  background-color: #FF0034;
+  border-radius: 50%;
+  border: 1.8px whitesmoke dashed;
+}
 .mainNav ul{
   list-style: none;
-  margin: 5px;
+  margin: 15px 5px;
   display: flex;
   align-items:flex-end;
 }
 .mainNav li {
-  font-size: 1.5em;
-  padding: 10px 5px;
+  padding: 10px;
   margin-right: 10px;
 
 }
@@ -92,8 +100,16 @@ a {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
  background: whitesmoke;
-
+}
+footer span {
+  /* font-weight: bold; */
+  font-size: .9em;
+}
+footer span:hover{
+  font-weight: bold;
 
 }
 footer p {
@@ -118,7 +134,11 @@ footer p {
   .mainHeader ul{
     margin: 0;
     padding: 0;
+  }
+  .mainHeader ul{
     border-top: 1px #FF0034 solid;
   }
-
+  footer {
+    flex-direction: column;
+  }
 }
