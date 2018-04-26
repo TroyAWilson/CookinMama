@@ -5,7 +5,7 @@
    #C874D9 French Mauve
    #E1BBC9 Cameo pink
    #FF0034 Cookin Mama logo color
-
+   #2F363C That off grey color I like
 */
 
 
@@ -14,46 +14,111 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
 
-body{
-  background-color: #E1BBC9;
-  margin:0;
-  padding:0;
 
 }
+main {
+  flex:1;
+}
+
+a {
+  color:#FF0034;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 .mainHeader{
   display: flex;
-  flex-wrap: wrap;
-  background-color:#1B1F3B;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: #1B1F3B;
 }
-.mainHeader img{
-  width: 100%;
-}
-
-.mainHeader ul{
-  display: flex;
-  list-style: none;
-  margin-top: 0;
-
-
-}
-.mainHeader li {
-  font-size: 1.5em;
-  background-color: #FF0034;
-  margin: 5px ;
+.mainHeader h1 {
+  color: #FF0034;
+  font-size:2.5em;
+  margin: 5px;
   padding: 5px;
-  border-radius: 5px;
-  box-shadow: 0px 3px 3px black;
 }
-a {
+.mainNav ul{
+  list-style: none;
+  margin: 5px;
+  display: flex;
+  align-items:flex-end;
+}
+.mainNav li {
+  font-size: 1.5em;
+  padding: 10px 5px;
+  margin-right: 10px;
+
+}
+.foodBox a:hover,
+.mainNav li:hover {
+  transform: scale(1.03);
   font-weight: bold;
-  color: #0B132B;  /* Maastricht blue */
-  text-decoration: none;
 }
 
-main{
-  background-color: #FF0034;
-  margin: auto;
+.container{
+  display: flex;
+  margin-top: 25px;
+}
+
+.foodBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  max-width: 33%;
+  margin: 10px;
+  border-radius: 10px;
+  border-bottom: 3px #FF0034 solid;
+}
+.foodBox p,
+.foodBox h2{
+  margin: 0 10px;
+}
+.foodBox img {
+  margin-top: 15px;
   max-width: 90%;
+}
+
+.foodBox a {
+  margin: 10px 0;
+}
+
+footer {
+ background: whitesmoke;
+
+
+}
+footer p {
+  margin: 0;
+}
+
+
+
+/* Media Queries  */
+@media(max-width:768px){
+  .container {
+    flex-direction: column;
+  }
+  .foodBox{
+    max-width: 100%;
+  }
+  .mainHeader{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainHeader h1,
+  .mainHeader ul{
+    margin: 0;
+    padding: 0;
+    border-top: 1px #FF0034 solid;
+  }
+
 }
