@@ -9,8 +9,6 @@
 */
 
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -73,7 +71,7 @@ a {
 
 .container{
   display: flex;
-  margin-top: 25px;
+  margin: 8.2px 0;
 }
 
 .foodBox{
@@ -88,7 +86,7 @@ a {
 }
 .foodBox p,
 .foodBox h2{
-  margin: 0 10px;
+  margin: 10px;
 }
 .foodBox img {
   margin-top: 15px;
@@ -106,7 +104,7 @@ footer {
 }
 footer span {
   /* font-weight: bold; */
-  font-size: .9em;
+  font-size: 17px;
 }
 footer span:hover{
   font-weight: bold;
